@@ -2,8 +2,10 @@ import discord
 from discord.ext import commands
 import aiohttp
 import asyncio
+import os
 
-TOKEN = 'MTM4Njg1MDAzNzQyMTcwNzM3Ng.GA-Egx.D0GdoXFes2IwTyjdUO8yDtHqw-n6UeYc91aYHI'
+TOKEN = os.getenv("DISCORD_TOKEN")
+
 WEBHOOK_URL = 'https://webhook.ninjadasautomacoes.com/webhook/discord/cadastrar'
 ROLE_NAME = "ninjas"
 
