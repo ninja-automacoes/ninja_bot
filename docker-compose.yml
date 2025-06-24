@@ -1,10 +1,9 @@
 version: '3.8'
-
 services:
   discord-bot:
-    image: discord-bot-ninja
     build:
-      context: .
+      context: .  # <- Isso garante que a imagem seja construída do Dockerfile local
+    image: discord-bot-ninja
     environment:
-      - DISCORD_TOKEN  # ⚠️ Só a chave, sem valor!
-    restart: unless-stopped
+      - DISCORD_TOKEN
+    restart: always
