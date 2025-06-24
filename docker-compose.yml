@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  discord-bot:
+    image: discord-bot-ninja
+    build:
+      context: .
+    environment:
+      - DISCORD_TOKEN=SEU_TOKEN_DO_BOT_AQUI
+    restart: always

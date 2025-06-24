@@ -5,7 +5,6 @@ import asyncio
 import os
 
 TOKEN = os.getenv("DISCORD_TOKEN")
-print(TOKEN)
 WEBHOOK_URL = 'https://webhook.ninjadasautomacoes.com/webhook/discord/cadastrar'
 ROLE_NAME = "ninjas"
 
