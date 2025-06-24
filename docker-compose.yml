@@ -6,5 +6,5 @@ services:
     build:
       context: .
     environment:
-      - DISCORD_TOKEN=SEU_TOKEN_DO_BOT_AQUI
-    restart: always
+      - DISCORD_TOKEN  # ⚠️ Só a chave, sem valor!
+    restart: unless-stopped
